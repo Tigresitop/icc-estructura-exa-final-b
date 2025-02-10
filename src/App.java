@@ -1,6 +1,15 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class App {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
+        ControladorEstudiante controlador = new ControladorEstudiante();
+
+        controlador.agruparEstudiantes();
+        controlador.ordenarEstudiantes();
+        controlador.mostrarEstudiantesOrdenados();
+        controlador.mostrarAgrupacion();
     }
 
     public static List<Estudiante> getListado(int a, int b) {
